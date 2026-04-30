@@ -63,87 +63,92 @@ By the final review, this README should clearly show:
 
 | Name                  | Primary Role                    | Secondary Role   | Strengths Brought to the Project |
 | --------------        | ------------------------------- | --------------   | -------------------------------- |
-| `Mrugendra Vasmatkar` | `[Electronics / Coding / App ]` | `Documentation`  | `Documentation, Gift of Gab `|
-| `Jyoti Bagate`        | `[Electronics / Fabrication]`   | `[Coding]`       | `Material Handling, Hardware`    |
+| Aryan Pandey          | `[Electronics / Coding / App ]` | `Documentation`  | `Documentation, Gift of Gab `|
+| Srushti Upase         | `[Electronics / Fabrication]`   | `[Coding]`       | `Material Handling, Hardware`    |
+| Omkar Hivrale         |                                 |                  |                                  |
+| Yash Singh            |                                 |                  |                                  | 
+
 
 ## 1.3 Project Title
 
-`"Project Project"`
+Smart Patient Safety Monitoring Pod using Raspberry Pi 4B
 
-`(because Project-or)`
-
-<img width="1600" height="1131" alt="image" src="https://github.com/user-attachments/assets/c64bfbd4-b3b7-43d9-83ad-c203a5aa11bc" />
 
 ## 1.4 One-Line Pitch
 
-`A projected, fully customizable time portal where engineering education is done through PUBG battlefield in the comfort of our home`
+A real-time patient monitoring system that detects emergencies, abnormal temperature, and hazardous gases, instantly alerting caregivers.
+
 
 ## 1.5 Expanded Project Idea
 
-In 1–2 paragraphs, explain:
+This project is a compact, sensor-based monitoring system designed to improve patient safety in hospitals or home-care environments. It continuously tracks three critical parameters: emergency touch input (patient-initiated alert), temperature (body or room), and harmful gas presence (like smoke or leakage). The system uses a Raspberry Pi 4B as the central processor to read sensor data and trigger alerts such as LEDs, buzzers, or notifications.
 
-- what your project is,
-- what kind of experience it creates,
-- what technologies are involved.
+The experience created is one of safety, responsiveness, and reassurance. A patient can simply touch a sensor to call for help, while the system autonomously detects environmental risks. Technologies involved include embedded systems, IoT concepts, sensor interfacing, and Python-based automation. This makes the project practical, scalable, and suitable for smart healthcare environments.
 
-**Response:**  
-`A projected and fully customizable time portal can transform engineering education into an immersive PUBG-style battlefield experience from the comfort of home. In this environment, students can learn engineering concepts by entering a virtual battlefield where challenges, obstacles, and missions are designed around real technical problems. Instead of passively studying theory, learners actively apply concepts such as electronics, coding, sensors, robotics, mechanics, and system design to complete missions, solve problems, and progress through different levels. This approach makes engineering education more interactive, engaging, and practical by combining gaming, simulation, and hands-on problem-solving in a familiar and exciting format.`
-
----
 
 # 2. Inspiration
 
 ## 2.1 References
 
 List what inspired the project.
-
-| Source Type | Title / Link                                                        | What Inspired You                                                                         |
-| ----------- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| `[Video]`   | `https://www.instagram.com/reel/DW4CT7WCDry/?igsh=cXg3dzAxYmdncDBo` | `How projection mapping can be used to create interactive digital + physical experiences` |
-|             |                                                                     |                                                                                           |
-|             |                                                                     |                                                                                           |
+| Source Type | Title / Link                | What Inspired You              |
+| ----------- | --------------------------- | ------------------------------ |
+| Real-world  | Hospital monitoring systems | Need for continuous monitoring |
+| Research    | IoT healthcare papers       | Smart sensor integration       |
+| Problem     | Patient safety issues       | Faster emergency response      |
 
 ## 2.2 Original Twist
 
-What makes your project original?
-
-**Response:**  
-
-
----
+Unlike traditional systems, this project combines manual (touch) + automatic (sensor-based) alerts in a simple low-cost design using Raspberry Pi.
 
 # 3. Project Intent
+To create a low-cost, reliable, real-time safety monitoring system for patients.
 
 ## 3.1 User Journey 
 
-Describe exactly how a user will use the project.Make it a story
-**Response:**  
+A patient is resting in bed. Suddenly, they feel discomfort and press the touch sensor. Instantly, an alert LED turns ON and a notification is triggered.
 
-                                                  |
+Meanwhile, the system continuously monitors temperature. If it rises beyond normal levels, it alerts caregivers automatically.
 
+At night, if there is a gas leak or smoke detected, the system immediately triggers a warning signal.
 
-
----
+The caregiver receives alerts without constantly monitoring the patient, ensuring faster response and better safety.
 
 # 4. Definition of Success
 
+The system:
+
+Detects all sensor inputs correctly
+Responds within seconds
+Provides clear alerts
+Runs continuously without failure
+
 ## 4.1 Definition of “Usable”
 
+A user can:
+
+Press touch sensor → get instant alert
+View system status via LED/display
+Trust automatic monitoring
 
 
 ## 4.2 Minimum Usable Version
 
-What is the smallest version of this project that still delivers the core experience?
+Smallest working version:
 
-**Response:**  
+Raspberry Pi
+Touch sensor
+Temperature sensor
+LED alert
 
 
 ## 4.3 Stretch Features
 
-What features are nice to have but not essential?
-
-
----
+Mobile app notifications
+Cloud monitoring
+Voice alerts
+Data logging
+LCD display
 
 # 5. System Overview
 
@@ -177,24 +182,23 @@ Check all that apply.
 
 ## 5.2 High-Level System Description
 
-Explain how the system works in simple terms.
+Input: Touch sensor, temperature sensor, gas sensor
+Processing: Raspberry Pi processes signals
+Output: LED alert / buzzer / notification
+Structure: Breadboard-based compact system
+App Interaction: Optional (IoT alert system)
 
-Include:
-
-- input,
-- processing,
-- output,
-- physical structure,
-- app interaction if any.
-
-**Response:**  
 
 ## 5.3 Input / Output Map
 
-| System Part                              | Type            | What It Does                                                               |
+| System Part  | Type       | What It Does        |
+| ------------ | ---------- | ------------------- |
+| Touch Sensor | Input      | Emergency alert     |
+| DHT11        | Input      | Temperature reading |
+| MQ-135       | Input      | Gas detection       |
+| Raspberry Pi | Processing | Decision making     |
+| LED          | Output     | Visual alert        |
 
-
----
 
 # 6. System Design, Sketches and Visual Planning 
 
@@ -242,15 +246,14 @@ Add a sketch with labels showing:
 
 ## 7.1 Electronics Used
 
-| Component                 | Quantity | Purpose                               |
-| ------------------------- | --------:| ------------------------------------- |
-| `[Raspi/FPGA]`                 | `1`      | `[Main controller]`                   |
-| `[L298N Motor Driver]`    | `1`      | `[Control Motors]`                    |
-| `[BO Motors]`             | `2`      | `[Rotate wheels]`                     |
-| `[Buck Converter]`        | `1`      | `[Power ESP32]`                       |
-| `[Li Ion Battery Pack]`   | `2`      | `[Power]`                             |
-| `[Projector]`             | `1`      | `[Display obstacles]`                 |
-| `Camera (Webcam / Phone)` | `1`      | `[Tracks car position using markers]` |
+| Component       | Quantity | Purpose         |
+| --------------- | -------- | --------------- |
+| Raspberry Pi 4B | 1        | Processing      |
+| DHT11           | 1        | Temperature     |
+| MQ-2            | 1        | Gas detection   |
+| TTP223          | 1        | Emergency input |
+| LED             | 1        | Alert           |
+
 
 ## 7.2 Wiring Plan
 
