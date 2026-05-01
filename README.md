@@ -63,7 +63,7 @@ By the final review, this README should clearly show:
 
 | Name                  | Primary Role                    | Secondary Role   | Strengths Brought to the Project |
 | --------------        | ------------------------------- | --------------   | -------------------------------- |
-| `Mrugendra Vasmatkar` | `[Electronics / Coding / App ]` | `Documentation`  | `Documentation, Gift of Gab `|
+| `Aryan Pandey       ` | `[Electronics / Coding / App ]` | `Documentation`  | `Documentation, Gift of Gab `|
 | `Jyoti Bagate`        | `[Electronics / Fabrication]`   | `[Coding]`       | `Material Handling, Hardware`    |
 
 ## 1.3 Project Title
@@ -244,7 +244,7 @@ Add a sketch with labels showing:
 
 | Component                 | Quantity | Purpose                               |
 | ------------------------- | --------:| ------------------------------------- |
-| `[Raspi/FPGA]`                 | `1`      | `[Main controller]`                   |
+| `[Raspi/FPGA]`            | `1`      | `[Main controller]`                   |
 | `[L298N Motor Driver]`    | `1`      | `[Control Motors]`                    |
 | `[BO Motors]`             | `2`      | `[Rotate wheels]`                     |
 | `[Buck Converter]`        | `1`      | `[Power ESP32]`                       |
