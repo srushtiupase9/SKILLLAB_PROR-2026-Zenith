@@ -257,16 +257,6 @@ Add a sketch with labels showing:
 `[Upload image and link here]`
 <img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/95637f31-b4e7-4427-a9e1-4b63fbeb0ac5" />
 
-## 6.3 Approximate Dimensions
-
-| Dimension        | Value   |
-| ---------------- | ------- |
-| Length           | `16 cm` |
-| Width            | `16 cm` |
-| Height           | `8 cm`  |
-| Estimated weight | `400 g` |
-
----
 
 # 7. Electronics Planning
 
@@ -380,8 +370,7 @@ Suggested sequence:
 - error handling.
 
 **Insert image below:**  
-<img width="1600" height="1200" alt="image" src="" />
-<img width="1600" height="1200" alt="image" src="" />
+![Code Flowchart](images/8.3.png)
 
 
 
