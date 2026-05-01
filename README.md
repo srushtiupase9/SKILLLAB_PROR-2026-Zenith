@@ -63,31 +63,30 @@ By the final review, this README should clearly show:
 
 | Name                  | Primary Role                    | Secondary Role   | Strengths Brought to the Project |
 | --------------        | ------------------------------- | --------------   | -------------------------------- |
-| `Aryan Pandey       ` | `[Electronics / Coding / App ]` | `Documentation`  | `Documentation, Gift of Gab `|
-| `Jyoti Bagate`        | `[Electronics / Fabrication]`   | `[Coding]`       | `Material Handling, Hardware`    |
+| `Aryan Pandey` | `[Electronics / Coding / App ]` | `Documentation`  | `Documentation, Gift of Gab `|
+| `Srushti Upase`       | `[Electronics / Fabrication]`   | `[Coding]`       | `Material Handling, Hardware`    |
+   `Yash Singh`
+  `Omkar Hivrale`
 
 ## 1.3 Project Title
 
-`"Project Project"`
+`"Smart Patient Monitoring System using Raspberry Pi"`
 
-`(because Project-or)`
 
 <img width="1600" height="1131" alt="image" src="https://github.com/user-attachments/assets/c64bfbd4-b3b7-43d9-83ad-c203a5aa11bc" />
 
 ## 1.4 One-Line Pitch
 
-`A projected, fully customizable time portal where engineering education is done through PUBG battlefield in the comfort of our home`
+`A smart healthcare system that monitors patient conditions in real-time using temperature, gas, and touch sensors with Raspberry Pi and provides instant alerts for safety.`
 
 ## 1.5 Expanded Project Idea
 
-In 1–2 paragraphs, explain:
+The Smart Patient Monitoring System using Raspberry Pi is designed to continuously monitor the health and safety conditions of a patient in real time. The system uses a temperature sensor to track room temperature, a gas sensor to detect harmful gases or air quality issues, and a touch sensor that can act as an emergency alert button for the patient. All sensors are connected to a Raspberry Pi, which processes the data using Python.
 
-- what your project is,
-- what kind of experience it creates,
-- what technologies are involved.
+When any abnormal condition is detected, such as high temperature, gas leakage, or when the patient presses the touch sensor, the system displays alert messages directly on the terminal. These messages help indicate the current status of the patient and notify caregivers about potential risks. This project demonstrates a simple and functional patient monitoring system that can be used in hospitals or home care environments. It improves patient safety by enabling timely identification of abnormal conditions and reduces the need for continuous manual monitoring.
 
 **Response:**  
-`A projected and fully customizable time portal can transform engineering education into an immersive PUBG-style battlefield experience from the comfort of home. In this environment, students can learn engineering concepts by entering a virtual battlefield where challenges, obstacles, and missions are designed around real technical problems. Instead of passively studying theory, learners actively apply concepts such as electronics, coding, sensors, robotics, mechanics, and system design to complete missions, solve problems, and progress through different levels. This approach makes engineering education more interactive, engaging, and practical by combining gaming, simulation, and hands-on problem-solving in a familiar and exciting format.`
+`The project focuses on building a real-time patient monitoring system using Raspberry Pi and multiple sensors like temperature,gas and touch sensor. It tracks environmental and emergency conditions such as temperature changes, gas presence, and patient input through a touch sensor. The system processes this data and provides alert messages on a terminal whenever any abnormal condition is detected. This helps caregivers quickly understand the patient’s status and take necessary action, making the system useful for basic healthcare monitoring in hospitals and home environments.`
 
 ---
 
@@ -95,20 +94,24 @@ In 1–2 paragraphs, explain:
 
 ## 2.1 References
 
-List what inspired the project.
 
-| Source Type | Title / Link                                                        | What Inspired You                                                                         |
-| ----------- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| `[Video]`   | `https://www.instagram.com/reel/DW4CT7WCDry/?igsh=cXg3dzAxYmdncDBo` | `How projection mapping can be used to create interactive digital + physical experiences` |
-|             |                                                                     |                                                                                           |
-|             |                                                                     |                                                                                           |
+
+| Source Type | Title / Link | What Inspired You |
+|------------|-------------|-------------------|
+| Research Paper | https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8036577/ | Understanding basic patient monitoring using sensors and real-time data collection |
+| Article | https://www.sciencedirect.com/topics/engineering/patient-monitoring-system | Overview of how patient monitoring systems work in healthcare |
+| Article | https://www.geeksforgeeks.org/raspberry-pi-introduction/ | Learning how Raspberry Pi can be used for sensor-based projects |
+| Real-world | Hospital patient monitoring systems | Need for continuous observation of patient conditions |
+| Problem | Delayed response in emergencies | Importance of immediate alert systems for patient safety |
 
 ## 2.2 Original Twist
 
 What makes your project original?
 
 **Response:**  
+The originality of this project lies in combining both automatic and manual alert mechanisms in a simple monitoring system. While most traditional systems focus only on sensor-based detection, this project also includes a touch sensor that allows the patient to manually request help in case of discomfort or emergency.
 
+Additionally, the system monitors not only patient-related conditions like temperature but also environmental factors such as gas presence, making it more comprehensive. The use of a compact setup with basic sensors and a processing unit makes the system simple to implement while still addressing important real-world healthcare needs.
 
 ---
 
@@ -118,8 +121,14 @@ What makes your project original?
 
 Describe exactly how a user will use the project.Make it a story
 **Response:**  
+A patient is resting in bed. If they feel discomfort, they press the touch sensor. A message is then displayed indicating that assistance is required.
 
-                                                  |
+The temperature value is continuously displayed, allowing observation of any changes. If needed, this can help in identifying unusual conditions.
+
+The surroundings are also checked for the presence of gas or smoke. If detected, a warning message is displayed to indicate a potential risk.
+
+These displayed messages and readings help caregivers or nearby individuals understand the situation and respond when necessary, without the need for constant supervision.
+                                                  
 
 
 
@@ -128,7 +137,9 @@ Describe exactly how a user will use the project.Make it a story
 # 4. Definition of Success
 
 ## 4.1 Definition of “Usable”
+The project is considered usable if it can correctly read data from all the connected sensors and display clear messages based on those readings. It should accurately identify normal and abnormal conditions and show the correct output without delay.
 
+The touch sensor should respond immediately when pressed and display the corresponding message. The program should run continuously without stopping and should produce consistent and understandable outputs.
 
 
 ## 4.2 Minimum Usable Version
@@ -136,12 +147,19 @@ Describe exactly how a user will use the project.Make it a story
 What is the smallest version of this project that still delivers the core experience?
 
 **Response:**  
+The minimum usable version of this project includes basic connections of a temperature sensor, gas sensor, and touch sensor with a program that reads their values.
 
+The program should be able to detect when the temperature exceeds a certain limit, when gas is present, or when the touch sensor is pressed, and display appropriate messages on the screen. Even without additional features, this setup is sufficient to demonstrate real-time sensing and alert indication through simple outputs.
 
 ## 4.3 Stretch Features
 
 What features are nice to have but not essential?
-
+- Displaying alerts on a mobile or web interface instead of only on a screen  
+- Adding buzzer or LED indicators for instant physical alerts  
+- Storing sensor data for future analysis  
+- Setting threshold-based automatic alerts for temperature  
+- Sending notifications to caregivers using SMS or app integration  
+- Making the setup wireless for easier placement
 
 ---
 
@@ -157,21 +175,21 @@ Check all that apply.
 
 - [x] Sensor-based
 
-- [x] App-connected
+- [ ] App-connected
 
 - [x] Motorized
 
 - [ ] Sound-based
 
-- [x] Light-based
+- [ ] Light-based
 
 - [x] Screen/UI-based
 
-- [x] Fabricated structure
+- [ ] Fabricated structure
 
-- [x] Game logic based
+- [ ] Game logic based
 
-- [x] Installation
+- [ ] Installation
 
 - [ ] Other:
 
@@ -188,11 +206,23 @@ Include:
 - app interaction if any.
 
 **Response:**  
+The project takes input from three sensors: a temperature sensor, a gas sensor, and a touch sensor. These sensors provide real-time data related to environmental conditions and user interaction.
+
+The collected data is processed using a Python program, where the sensor values are read and basic conditions are checked. Based on these readings, appropriate messages are generated.
+
+The output is displayed on a screen in the form of text messages. The temperature value is continuously shown. For the gas sensor, messages such as "Safe" or "Danger" are displayed depending on the detected level. When the touch sensor is pressed, a message indicating "Help Requested" is shown.
+
+The components are connected using basic wiring on a board, forming a simple hardware setup. There is no external application involved, and all interactions are limited to sensor inputs and on-screen outputs.
 
 ## 5.3 Input / Output Map
 
-| System Part                              | Type            | What It Does                                                               |
-
+| System Part        | Type   | What It Does |
+|------------------|--------|--------------|
+| Temperature Sensor | Input  | Measures temperature and displays the value |
+| Gas Sensor        | Input  | Detects presence of gas or smoke |
+| Touch Sensor      | Input  | Detects user touch as a request for assistance |
+| Processing Unit   | Process| Reads sensor data and decides what message to display |
+| Display (Screen)  | Output | Shows temperature values and alert messages |
 
 ---
 
@@ -242,26 +272,27 @@ Add a sketch with labels showing:
 
 ## 7.1 Electronics Used
 
-| Component                 | Quantity | Purpose                               |
-| ------------------------- | --------:| ------------------------------------- |
-| `[Raspi/FPGA]`            | `1`      | `[Main controller]`                   |
-| `[L298N Motor Driver]`    | `1`      | `[Control Motors]`                    |
-| `[BO Motors]`             | `2`      | `[Rotate wheels]`                     |
-| `[Buck Converter]`        | `1`      | `[Power ESP32]`                       |
-| `[Li Ion Battery Pack]`   | `2`      | `[Power]`                             |
-| `[Projector]`             | `1`      | `[Display obstacles]`                 |
-| `Camera (Webcam / Phone)` | `1`      | `[Tracks car position using markers]` |
+| Component              | Quantity | Purpose |
+|----------------------|----------|---------|
+| Raspberry Pi 4B | 1        | Main processing unit to read sensor data and display output |
+| Temperature Sensor     | 1        | Measures temperature and provides continuous readings |
+| Gas Sensor             | 1        | Detects presence of gas or smoke |
+| Touch Sensor           | 1        | Detects user input for assistance request |
+| Jumper Wires           | As required | Used for connecting components |
+
 
 ## 7.2 Wiring Plan
 
 Describe the main electrical connections.
 
-**sample Response:**  
-`The RASPI is connected to the motor driver (L298N) using four GPIO pins (18,19; 22,23) to control motor direction (IN1, IN2, IN3, IN4). Two PWM-capable pins (ENA and ENB; 25 and 26) are connected to control the speed of each motor.
+**Response:**  
+The sensors are connected to the GPIO pins of the processing unit using jumper wires. Each sensor is provided with proper power (VCC) and ground (GND) connections.
 
-The motors are connected to the output terminals of the motor driver. The motor driver is powered directly by the battery pack (higher voltage), while the ESP32 receives regulated 5V from the buck converter.
+The temperature sensor (DHT11) is connected to GPIO pin 7 to read temperature values. The gas sensor is connected to GPIO pin 17 and provides a digital signal indicating whether gas is detected or not. The touch sensor is connected to GPIO pin 27 and detects user interaction when pressed.
 
-All components share a common ground to ensure stable operation. The projector and camera are connected to the laptop, which handles tracking and game logic separately.`
+The gas sensor is configured using a pull-up connection, where it gives a LOW signal when gas is detected. The touch sensor uses a pull-down configuration and gives a HIGH signal when touched.
+
+All components share a common ground to ensure stable operation. The sensor data is read through GPIO pins and corresponding messages are displayed on the screen based on the conditions.
 
 ## 7.3 Circuit Diagram/architecture diagram
 
@@ -274,12 +305,12 @@ Insert a hand-drawn or software-made circuit diagram.
 
 # 7.4. Power Plan
 
-| Question         | Response                                                                                                                                          |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Power source     | `Battery (Li-ion pack)`                                                                                                                           |
-| Voltage required | `~6–8.4V for motors (via driver), stepped down to 5V for ESP32 (buck converter)`                                                                  |
-| Current concerns | `Motors can draw high current under load, which may cause voltage drops affecting ESP32 and WiFi stability`                                       |
-| Safety concerns  | `Avoid over-discharging Li-ion batteries, ensure proper voltage regulation, prevent short circuits, and secure wiring to avoid loose connections` |
+| Question         | Response |
+|------------------|----------|
+| Power source     | Standard 5V power supply (adapter) |
+| Voltage required | 5V for the processing unit and sensors |
+| Current concerns | Sensors draw low current, but stable power is required for continuous operation |
+| Safety concerns  | Ensure proper connections, avoid short circuits, and use a reliable power supply to prevent sudden shutdowns |
 
 ---
 
@@ -287,12 +318,12 @@ Insert a hand-drawn or software-made circuit diagram.
 
 ## 8.1 Software Tools
 
-| Tool / Platform                | Purpose                                        |
-| ------------------------------ | ---------------------------------------------- |
-| `[MicroPython]`                | `Control ESP32`                                |
-| `[Python/PyGame/OpenCV]`       | `Track markers, game logic, create projection` |
-| `[Fusion/Blender/Illustrator]` | `[Prototyping structure]`                      |
-|                                |                                                |
+| Tool / Platform | Purpose |
+|-----------------|---------|
+| Python          | Used to read sensor data and process conditions |
+| RPi.GPIO Library| Used for interfacing with GPIO pins |
+| Adafruit DHT Library | Used to read temperature from the DHT11 sensor |
+| Thonny / Terminal | Used to write and run the program |
 
 ## 8.2 Software Logic/Algorithm
 
@@ -309,22 +340,29 @@ Include:
 - reset behavior.
 
 **Response:**  
-`
+**Startup behavior:**
+The program initializes all required libraries and configures the GPIO pins for the gas sensor and touch sensor. The temperature sensor is also initialized. A message is displayed indicating that monitoring has started.
 
-- **Sample Startup behavior:**  
-  The Raspi/FPGA initializes motor pins, PWM control, and starts a WiFi access point with a web server. The laptop initializes camera input, tracking system, and projection mapping.
-- **Input handling:**  
-  Movement commands are received from the laptop (pygame sends http requests)
-- **Sensor reading:**  
-  The camera continuously captures frames, and OpenCV detects ArUco markers to determine the car’s position and orientation.
-- **Decision logic:**  
-  The system maps the car’s position into a virtual coordinate system and checks for nearby obstacles or collisions. If movement is valid, the command is allowed; if not, it is blocked or replaced with a feedback action (like a slight shake).
-- **Output behavior:**  
-  The ESP32 drives the motors using PWM signals to control speed and direction. The projector displays the updated game environment, including obstacles, targets, and feedback visuals.
-- **Communication logic:**  
-  The laptop sends HTTP requests (e.g., `/forward`, `/left`) to the ESP32 over WiFi. The ESP32 parses these commands and executes motor actions.
-- **Reset behavior:**  
-  If no command is received within a short timeout, the ESP32 stops the motors. The game resets when a level is completed or restarted.`
+**Input handling:**
+Inputs are taken from three sensors: gas sensor, touch sensor, and temperature sensor. The gas sensor provides a digital signal, the touch sensor detects user interaction, and the temperature sensor provides temperature readings.
+
+**Sensor reading:**
+The program continuously reads the temperature value and checks the status of the gas and touch sensors. If any temporary error occurs while reading the temperature sensor, the program retries after a short delay.
+
+**Decision logic:**
+Based on the sensor values, the program determines the current state:
+- If gas is detected or temperature is very high → Emergency  
+- If temperature is above a certain level → Warning  
+- Otherwise → Safe  
+
+**Output behavior:**
+The temperature value is displayed continuously. Along with this, the system displays the current status (Safe, Warning, or Emergency). Additional messages are displayed when the touch sensor is pressed, indicating that help is required.
+
+**Communication logic:**
+There is no external communication involved. All outputs are displayed locally on the screen.
+
+**Reset behavior:**
+The program runs continuously in a loop until it is manually stopped. When stopped, the GPIO pins are cleaned up properly.
 
 ## 8.3 Code Flowchart
 
@@ -352,46 +390,52 @@ Suggested sequence:
 
 ## 9.1 Full BOM
 
-| Item                             | Quantity | In Kit? | Need to Buy? | Estimated Cost | Material / Spec               | Why This Choice?          |
-| -------------------------------- | --------:| ------- | ------------ | --------------:| ----------------------------- | ------------------------- |
-| `[RASPI]`                        | `1`      | `Yes`   | `No`         | `0`            | `38 Pin ESP32`                | `[To control components]` |
-| `[Motor Driver]`                 | `[1]`    | `[Yes]` | `[No]`       | `0`            | `[LN296]`                     | `[To drive both motors]`  |
-| `[DC Motors and wheel]`          | `[2]`    | `[No]`  | `[Yes]`      | `[150]`        | `[BO Motors and 6 cm wheels]` | `[high torque motors]`    |
-| `[Buck Converter]`               | `[1]`    | `[No]`  | `[Yes]`      | `[75]`         |                               |                           |
-| `[Li-ion batteries with holder]` | `[1]`    | `[No]`  | `[Yes]`      | `[200]`        |                               |                           |
+| Item                     | Quantity | In Kit? | Need to Buy? | Estimated Cost | Material / Spec | Why This Choice? |
+|--------------------------|----------|---------|--------------|----------------|------------------|------------------|
+| Raspberry Pi 4B   | 1        | Yes     | No           | 0              | 40-pin GPIO board | Used for processing sensor data and running the program |
+| Temperature Sensor (DHT11)| 1       | Yes     | No           | 0              | Digital sensor    | Used to measure temperature |
+| Gas Sensor (MQ-135)   | 1        | Yes     | No           | 0              | Gas detection sensor | Used to detect gas or smoke |
+| Touch Sensor             | 1        | Yes     | No           | 0              | Capacitive touch module | Used for manual input from user |
+| Jumper Wires             | As required | Yes  | No           | 0              | Connecting wires  | Used to connect all components |
+
 
 ## 9.2 Material Justification
 
 Explain why you selected your main materials and components.
 
 **Response:**  
-`DC motors (BO motors) were chosen instead of servos or steppers because the system requires continuous rotation for movement rather than precise angular control (Previously, we were considering using steppers as we were planning on tracking movement on the ESP using its relative position from an origin, but since we're using a camera now, this is not required). A motor driver (L298N) was used to allow bidirectional control and speed variation using PWM.`
+`The selected components were chosen to create a simple and functional sensor-based setup. The Raspberry Pi 4B is used as the main processing unit because it can easily interface with sensors and run Python programs.
+The DHT11 temperature sensor is used for basic temperature measurement, which is sufficient for demonstrating the concept. The gas sensor helps in detecting the presence of harmful gases or smoke in the environment. The touch sensor allows manual input from the user, making it possible to indicate a need for assistance.
+Jumper wires are used for easy connections between components. All components are simple to use, easily available, and suitable for demonstrating real-time sensing and output display.`
 
 
 ## 9.3 Items You chose
 
-| Item                 | Why Needed               | Purchase Link | Latest Safe Date to Procure | Status       |
-| -------------------- | ------------------------ | ------------- | --------------------------- | ------------ |
-| `BO Motors + Wheels` | `Drive system for car`   | `robu.in`     | `15th April`                | `[Received]` |
-| `Buck Converter`     | `Stable power for ESP32` | `local store` | `before testing`            | `[Received]` |
-| `Li-ion Batteries`   | `Portable power`         | `local store` | `before testing`            | `Recieved`   |
+| Item                      | Why Needed                         | Purchase Link | Latest Safe Date to Procure | Status     |
+|---------------------------|------------------------------------|---------------|-----------------------------|------------|
+| Temperature Sensor (DHT11)| To measure temperature             | Provided in lab | Already available          | Received   |
+| Gas Sensor                | To detect gas or smoke             | Provided in lab | Already available          | Received   |
+| Touch Sensor              | For manual input (help request)    | Provided in lab | Already available          | Received   |
+| Jumper Wires              | For connections                    | Provided in lab | Already available          | Received   |
+| Raspberry Pi 4B    | To process data and run code       | Provided in lab | Already available          | Received   |
 
 ## 9.4 Budget Summary
 
-| Budget Item           | Estimated Cost              |
-| --------------------- | ---------------------------:|
-| Electronics           | `[400]`                     |
-| Mechanical parts      | `[200]`                     |
-| Fabrication materials | `[0 (Available on campus)]` |
-| Purchased extras      | `[0]`                       |
-| Contingency           | `[300]`                     |
-| **Total**             | `[900]`                     |
+| Budget Item        | Estimated Cost |
+|-------------------|----------------|
+| Electronics       | 0              |
+| Mechanical parts  | 0              |
+| Fabrication materials | 0          |
+| Purchased extras  | 0              |
+| Contingency       | 0              |
+| **Total**         | 0              |
 
 ## 9.5 Budget Reflection
 
 If your cost is too high, what can be simplified, removed, substituted, or shared?
 
 **Response:**  
+Since all components used in this project were already available in the lab kit, no additional cost was required. If needed, the project can be simplified further by using fewer sensors or substituting components with similar alternatives. Components can also be shared among multiple groups to reduce cost.
 
 ---
 
@@ -410,25 +454,35 @@ Include:
 - how documentation will be maintained.
 
 **Response:**  
+The team followed a structured and collaborative approach with clearly defined roles and responsibilities.
 
+Task division was done based on individual strengths. Aryan Pandey led the team and was responsible for implementing the project, including handling sensor connections and overall integration. Srushti Upase assisted in the implementation and managed the GitHub repository, ensuring proper documentation. Yash Singh was responsible for setting up the software environment, including installation and configuration of required libraries. Omkar Hivrale handled progress tracking and regularly uploaded updates on GitHub.
+
+Decisions were made collectively through discussion among all team members to ensure clarity and agreement. Progress was reviewed regularly to monitor task completion and maintain steady workflow.
+
+In case of delays, responsibilities were adjusted and team members supported each other to complete pending work on time. Documentation was maintained continuously on GitHub, ensuring that all changes and progress were properly recorded.
 
 ## 10.2 Task Breakdown
-
-| Task ID | Task                    | Owner    | Estimated Hours | Deadline     | Dependency | Status |
-| ------- | ----------------------- | -------- | ---------------:| ------------ | ---------- | ------ |
-| T1      | `[Finalize concept]`    | `[Both]` | `2`             | `1st April`  | `None`     | `Done` |
+| Task ID | Task                          | Owner           | Estimated Hours | Deadline  | Dependency                | Status |
+|---------|-------------------------------|------------------|-----------------|-----------|---------------------------|--------|
+| T1      | Finalize project concept      | All              | 1               | 2nd May   | None                      | Done   |
+| T2      | Sensor connections setup      | Aryan            | 2               | 2nd May   | After concept finalization| Done   |
+| T3      | Python code implementation    | Aryan, Srushti   | 4               | 2nd May   | After connections setup   | Done   |
+| T4      | Library installation setup    | Yash             | 2               | 2nd May   | Before running code       | Done   |
+| T5      | Testing and debugging         | Aryan,Srushti              | 3               | 2nd May   | After code implementation | Done   |
+| T6      | GitHub updates & documentation| Srushti, Omkar   | 3               | 2nd May   | Ongoing                   | Ongoing   |
 
 
 ## 10.3 Responsibility Split
 
-| Area                 | Main Owner     | Support Owner |
-| -------------------- | ----------     | ------------- |
-| Concept              | `[Mrugendra]`  | `[Jyoti]`     |
-| Electronics          | `[]`           | `[]`          |
-| Coding               | `[]`           | `[]`          |
-| Mechanical build     | `[]`           | `[]`          |
-| Testing              | `[]`           | `[]`          |
-| Documentation        | `[]`           | `[]`          |
+| Area           | Main Owner   | Support Owner |
+|----------------|--------------|----------------|
+| Concept        | All          | —              |
+| Electronics    | Aryan        | Srushti        |
+| Coding         | Aryan        | Srushti        |
+| Setup (Libraries) | Yash     | Omkar          |
+| Testing        | Aryan          | Srushti            |
+| Documentation  | Srushti      | Omkar          |
 
 ---
 
@@ -436,56 +490,55 @@ Include:
 
 ## 11.1 8-hour Plan(tentetively you may set)
 
-### Bi Hour 1 — Plan and De-risk
+### Bi Hour 1 — Plan and Setup
 
 Expected outcomes:
 
-- [x] Idea finalized
-- [x] Core interaction decided
-- [x] Sketches made
-- [x] BOM completed
-- [x] Purchase needs identified
-- [ ] Key uncertainty identified
-- [x] Basic feasibility tested
+- [x] Idea finalized  
+- [x] Components identified  
+- [x] Basic connections planned  
+- [x] Required libraries identified  
+- [x] Initial setup completed  
+- [ ] Key uncertainty identified  
+- [ ] Basic feasibility tested  
 
-### Bi Hour 2 — Build Subsystems
-
-Expected outcomes:
-
-- [x] Electronics tests completed
-- [ ] CAD / structure planning completed
-- [ ] App UI started if needed
-- [x] Mechanical concept tested
-- [x] Main subsystems partially working
-
-### Bi Hour 3 — Integrate
+### Bi Hour 2 — Hardware Setup
 
 Expected outcomes:
 
-- [x] Physical body built
-- [x] Electronics integrated
-- [x] Code connected to hardware
-- [ ] App connected if required
-- [x] First playable version exists
+- [x] Sensor connections completed  
+- [x] GPIO setup verified  
+- [x] Power connections checked  
+- [ ] Connection stability tested  
+- [] Basic input readings obtained  
 
-### Bi Hour 4 — Refine and Finish
+
+### Bi Hour 3 — Code Implementation
 
 Expected outcomes:
 
-- [x] Technical bugs reduced
-- [x] Playtesting completed
-- [x] Improvements made
-- [x] Documentation completed
-- [x] Final build ready
+- [x] Sensor reading code written  
+- [] Temperature reading working  
+- [x] Gas sensor detection working  
+- [x] Touch sensor input working  
+- [ ] Error handling added  
+
+### Bi Hour 4 — Logic Implementation
+
+Expected outcomes:
+
+- [x] Decision logic implemented (Safe/Warning/Emergency)  
+- [x] Output messages formatted  
+- [x] Continuous monitoring loop implemented  
+- [ ] Code optimization completed  
+
 
 ## 12.2  Update Log
 
-| Days   | Planned Goal   | What Actually Happened | What Changed   | Next Steps     |
-| ------ | -------------- | ---------------------- | -------------- | -------------- |
-| Day 1 | `[Write here]` | `[Write here]`         | `[Write here]` | `[Write here]` |
-| Day 2 | `[Write here]` | `[Write here]`         | `[Write here]` | `[Write here]` |
-| Day 3 | `[Write here]` | `[Write here]`         | `[Write here]` | `[Write here]` |
-| Day 4 | `[Write here]` | `[Write here]`         | `[Write here]` | `[Write here]` |
+| Days   | Planned Goal                          | What Actually Happened                                  | What Changed                                      | Next Steps                                      |
+|--------|---------------------------------------|----------------------------------------------------------|--------------------------------------------------|------------------------------------------------|
+| Day 1 (30th April) | Complete sensor setup and coding       | Sensor connections completed and code implemented successfully | Work completed as planned                        | Verify outputs and finalize documentation       |
+| Day 2 (2nd May)    | Add extra features (LED, buzzer, LCD) | Time availability uncertain, core project already completed | May not be able to add extra components          | If time permits, integrate LED/buzzer/LCD, otherwise finalize existing work |
 
 ---
 
@@ -493,9 +546,12 @@ Expected outcomes:
 
 ## 13.1 Risk Register
 
-| Risk                                                            | Type         | Likelihood | Impact   | Mitigation Plan                                                                       | Owner                |
-| --------------------------------------------------------------- | ------------ | ---------- | -------- | ------------------------------------------------------------------------------------- | -------------------- |
-| WiFi connection between laptop and ESP32 becomes unstable       | `Technical`  | `Medium`   | `High`   | Keep ESP32 close, ensure stable power supply, reduce network load, add fail-safe stop | `[Gopal]`           |
+| Risk                                | Type       | Likelihood | Impact | Mitigation Plan                                              | Owner    |
+|-------------------------------------|------------|------------|--------|--------------------------------------------------------------|----------|
+| Temperature sensor reading errors   | Technical  | Medium     | Medium | Retry reading and handle errors in code                      | Yash     |
+| Incorrect sensor connections        | Technical  | Medium     | High   | Double-check wiring before running the system                | Aryan    |
+| Gas sensor false readings           | Technical  | Medium     | Medium | Test readings multiple times to confirm accuracy             | Srushti  |
+| Limited time for extra features     | Planning   | High       | Medium | Focus on core functionality first and add extras if possible | Omkar    |
 
 
 ## 13.2 Biggest Unknown Right Now
@@ -503,7 +559,7 @@ Expected outcomes:
 What is the single biggest uncertainty in your project at this stage?
 
 **Response:**  
-
+The biggest uncertainty is whether sufficient time will be available on the final day to integrate additional components such as LED, buzzer, or LCD. Since the core functionality is already completed, these enhancements depend entirely on the available time.
 
 ---
 
@@ -511,22 +567,27 @@ What is the single biggest uncertainty in your project at this stage?
 
 ## 14.1 Technical Testing Plan
 
-| What Needs Testing     | How You Will Test It                                                                 | Success Condition                                                                                    |
-| ---------------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------- |
-| `[Wifi connection]`    | `[Check if motor spins via app button]`                                              | `[Both motors accurately respond to wifi signals]`                                                   |
-                       |
+| What Needs Testing     | How You Will Test It                              | Success Condition                                      |
+|-----------------------|---------------------------------------------------|--------------------------------------------------------|
+| Temperature sensor    | Observe temperature values on screen              | Correct temperature values are displayed continuously   |
+| Gas sensor            | Expose sensor to gas/smoke (controlled test)      | "Safe" / "Danger" message changes correctly             |
+| Touch sensor          | Press the sensor manually                         | "Help Required" message is displayed immediately        |
+| Overall system        | Run all sensors together                          | All outputs are displayed correctly without errors      |
 ## 14.2 Testing and Debugging Log
 
-| Date          | Problem Found                         | Type         | What You Tried                                | Result               | Next Action                                    |
-| ------------- | ------------------------------------- | ------------ | --------------------------------------------- | -------------------- | ---------------------------------------------- |
-| `18th April`  | `Car not balancing properly`          | `Mechanical` | `Add low-friction caster support to one side` | `Worked`             | `improve caster structure`                     |
+| Date       | Problem Found                           | Type       | What You Tried                                      | Result  | Next Action                     |
+|------------|-----------------------------------------|------------|------------------------------------------------------|---------|--------------------------------|
+| 30th April | Adafruit DHT library error              | Technical  | Reinstalled library and corrected import usage       | Worked  | Ensure proper setup in future  |
+| 30th April | Temperature sensor not detected         | Technical  | Checked connections, replaced with another sensor    | Worked  | Continue using new sensor      |
+| 30th April | Gas sensor readings verification        | Technical  | Tested outputs and validated SAFE/DANGER conditions  | Worked  | Minor calibration if needed    |
+| 30th April | Touch sensor functioning correctly      | Verification | Tested multiple times for input response           | Working | No action required             |
 
 
 ## 14.3 Playtesting Notes
 
-| Tester      | What They Did                        | What Confused Them                    | What They Enjoyed                         | What You Will Change                          |
-| ----------- | ------------------------------------ | ------------------------------------- | ----------------------------------------- | --------------------------------------------- |
-| `Gopal` | `Tried navigating through obstacles` | `Some obstacles ewren't clear enough` | `Liked projection + real car interaction` | `Add a slight red highlight around obstacles` |
+| Tester  | What They Did                      | What Confused Them            | What They Enjoyed                | What You Will Change                     |
+|---------|-----------------------------------|-------------------------------|----------------------------------|------------------------------------------|
+| Team    | Tested sensors and observed output| Understanding sensor outputs  | Real-time data display           | Improve clarity of displayed messages    |
 
 
 ---
@@ -548,21 +609,7 @@ Include:
 - revisions.
 
 **Response:**  
-`The fabrication process involved designing, manufacturing, assembling, and refining both the physical structure and electronic integration of the system.`
-
-`Design (CAD Modeling):
-The initial model was created using CAD software, where components were designed based on the actual dimensions of the electronic parts. This ensured accurate fitting and minimized errors during assembly.
-Cutting (Laser Cutting):
-The designed parts were fabricated using laser cutting techniques. Sheets were cut precisely according to the CAD model to create the structural base and mounts for components.`
-
-`Components were fixed using adhesives and mechanical supports. Certain parts were intentionally kept modular (not permanently fixed) to allow easy replacement and modification of electronics.
-Surface Finishing:
-Some parts were sanded to smooth rough edges after cutting. Sawdust mixed with adhesive was used to fill gaps and uneven edges, improving structural finish. The final structure was then painted for better aesthetics and durability.`
-
-`Environment Setup (Dark Room Fabrication):
-To enhance projection visibility, a controlled dark environment was created using Z-boards, paper sheets, and bedsheets. This minimized external light interference and improved projection clarity.
-Revisions and Iterations:
-Multiple adjustments were made throughout the process, including refining alignment, improving structural stability, repositioning components, and optimizing the interaction between the physical car and projected environment.`
+No physical fabrication process was involved in this project. The setup was created using sensors connected through jumper wires. The focus of the project was on sensor interfacing, data processing, and displaying outputs rather than mechanical or structural design.
 
 ## 16 Build Photos
 
@@ -589,21 +636,36 @@ Suggested images:
 Describe the final version of your project.
 
 **Response:**  
+The final implementation consists of a sensor-based setup that reads inputs from a temperature sensor, gas sensor, and touch sensor. The data from these sensors is processed using a Python program.
 
+The system continuously displays temperature readings, indicates gas status as SAFE or DANGER, and detects user interaction through the touch sensor. When the touch sensor is activated, a “Help Required” message is displayed.
+
+All outputs are shown as text on a screen. The project focuses on sensing, condition checking, and clear output display.
 
 ## 17.2 What Works Well
-
+- Accurate and continuous temperature readings are displayed.
+- Gas sensor correctly identifies SAFE and DANGER conditions.
+- Touch sensor responds reliably and triggers the expected message.
+- Code execution is stable after resolving initial library and sensor issues.
+- Overall integration of multiple sensors works smoothly.
 
 
 ## 17.3 What Still Needs Improvement
-
+- No physical alert mechanisms such as buzzer or LED are implemented yet.
+- Output is limited to text display and not externally communicated.
+- Sensor calibration can be improved for more precise readings.
+- System can be extended with a display module (LCD) for better usability.
 
 ## 17.4 What Changed From the Original Plan
 
 How did the project change from the initial idea?
 
 **Response:**  
+Initially, the plan included integrating additional output components such as LED indicators and buzzers for alerts. However, due to time constraints, the implementation was limited to displaying outputs on the screen.
 
+There were also initial issues with the temperature sensor and the Adafruit library, which required troubleshooting and replacement of the sensor.
+
+The final version focuses on core functionality — reading sensor data, processing it, and displaying meaningful messages — rather than implementing extended features.
 
 ---
 
@@ -616,7 +678,11 @@ What slowed you down?
 How well did you manage time, tasks, and responsibilities?
 
 **Response:**  
+The team worked effectively by dividing responsibilities based on individual strengths. Aryan handled implementation and hardware connections while leading the overall execution. Srushti supported the implementation and maintained project documentation on GitHub. Yash focused on setting up required libraries and ensuring the programming environment was functional, and Omkar assisted in updating progress and maintaining repository consistency.
 
+The main challenge faced was resolving technical issues such as sensor detection and library errors, which required additional time for debugging. However, the team managed to complete the core functionality within the available time.
+
+Time and tasks were managed efficiently by focusing on essential features first. In case of delays, team members collaborated and adjusted responsibilities to ensure completion. Documentation was maintained regularly to track progress.
 
 ## 18.2 Technical Reflection
 
@@ -629,7 +695,11 @@ What did you learn about:
 - integration?
 
 **Response:**  
+Through this project, we gained practical experience in sensor interfacing and GPIO-based input handling. We learned how to read real-time data from temperature, gas, and touch sensors and process it using Python.
 
+We also understood the importance of correct library usage, especially while working with the Adafruit DHT module, and how to troubleshoot related issues. Debugging hardware problems, such as sensor detection failures, helped improve our understanding of connections and system behavior.
+
+Overall, the project strengthened our knowledge of integrating multiple sensors, handling real-time inputs, and generating meaningful outputs.
 
 ## 18.3 Design Reflection
 
@@ -643,14 +713,20 @@ What did you learn about:
 - iteration?
 
 **Response:**  
+The design of the project focused on simplicity and clarity. Instead of adding multiple hardware outputs, the system was designed to clearly display sensor readings and messages in a structured format.
 
+We learned the importance of designing a system that is easy to understand and implement within given constraints. The interaction using the touch sensor as a manual input added a practical dimension to the design.
+
+The process also highlighted the need for iterative improvements, especially when dealing with hardware components and real-time data handling.
 
 ## 18.4 If You Had One More hour
 
 What would you improve next?
 
 **Response:**  
+If given additional time, we would integrate external output components such as an LED, buzzer, or LCD display to make the alerts more noticeable.
 
+We would also improve the presentation of outputs and refine sensor calibration for better accuracy. Additional testing would be performed to ensure stability and consistency across different conditions.
 ` `
 
 ---
