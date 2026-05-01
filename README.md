@@ -85,10 +85,6 @@ The Smart Patient Monitoring System using Raspberry Pi is designed to continuous
 
 When any abnormal condition is detected, such as high temperature, gas leakage, or when the patient presses the touch sensor, the system displays alert messages directly on the terminal. These messages help indicate the current status of the patient and notify caregivers about potential risks. This project demonstrates a simple and functional patient monitoring system that can be used in hospitals or home care environments. It improves patient safety by enabling timely identification of abnormal conditions and reduces the need for continuous manual monitoring.
 
-**Response:**  
-`The project focuses on building a real-time patient monitoring system using Raspberry Pi and multiple sensors like temperature,gas and touch sensor. It tracks environmental and emergency conditions such as temperature changes, gas presence, and patient input through a touch sensor. The system processes this data and provides alert messages on a terminal whenever any abnormal condition is detected. This helps caregivers quickly understand the patient’s status and take necessary action, making the system useful for basic healthcare monitoring in hospitals and home environments.`
-
----
 
 # 2. Inspiration
 
@@ -249,7 +245,6 @@ Add a sketch with labels showing:
 - output elements.
 
 **Insert image below:**  
-`[Upload image and link here]`
 ![Build Sketch](images/6.2.png)
 
 
@@ -387,9 +382,9 @@ Suggested sequence:
 Explain why you selected your main materials and components.
 
 **Response:**  
-`The selected components were chosen to create a simple and functional sensor-based setup. The Raspberry Pi 4B is used as the main processing unit because it can easily interface with sensors and run Python programs.
+The selected components were chosen to create a simple and functional sensor-based setup. The Raspberry Pi 4B is used as the main processing unit because it can easily interface with sensors and run Python programs.
 The DHT11 temperature sensor is used for basic temperature measurement, which is sufficient for demonstrating the concept. The gas sensor helps in detecting the presence of harmful gases or smoke in the environment. The touch sensor allows manual input from the user, making it possible to indicate a need for assistance.
-Jumper wires are used for easy connections between components. All components are simple to use, easily available, and suitable for demonstrating real-time sensing and output display.`
+Jumper wires are used for easy connections between components. All components are simple to use, easily available, and suitable for demonstrating real-time sensing and output display.
 
 
 ## 9.3 Items You chose
