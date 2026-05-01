@@ -233,13 +233,8 @@ The components are connected using basic wiring on a board, forming a simple har
 Add an early sketch of the full idea.
 
 **Insert image below:**  
+![Concept Sketch](images/6.1.png)
 
-
-Example:
-
-```md
-
-```
 
 
 
