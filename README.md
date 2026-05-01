@@ -233,7 +233,7 @@ The components are connected using basic wiring on a board, forming a simple har
 Add an early sketch of the full idea.
 
 **Insert image below:**  
-`[Upload image and link here]`
+
 
 Example:
 
@@ -289,7 +289,6 @@ All components share a common ground to ensure stable operation. The sensor data
 Insert a hand-drawn or software-made circuit diagram.
 
 **Insert image below:**  
-`[Upload image and link here]`
 ![Circuit Diagram](images/7.3.png)
 
 
