@@ -66,7 +66,7 @@ By the final review, this README should clearly show:
 | Aryan Pandey   | Electronics / Coding       | Team Lead          | Leadership, System Integration          |
 | Srushti Upase  | Electronics    |  GitHub    | Hardware Handling, Documentation        |
 | Yash Singh     | Raspberry Pi Setup / Libraries  | Testing            | Software Setup           |
-| Omkar Hivrale  | GitHub Management               | Progress Tracking  | Version Control, Project Monitoring     |
+| Omkar Hivrale | GitHub Management | Repository Maintenance | Version Control, Project Monitoring |
 
 ## 1.3 Project Title
 
