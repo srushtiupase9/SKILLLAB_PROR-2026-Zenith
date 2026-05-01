@@ -64,7 +64,7 @@ By the final review, this README should clearly show:
 | Name           | Primary Role                    | Secondary Role     | Strengths Brought to the Project        |
 |----------------|--------------------------------|--------------------|-----------------------------------------|
 | Aryan Pandey   | Electronics / Coding       | Team Lead          | Leadership, System Integration          |
-| Srushti Upase  | Electronics    | Coding / GitHub    | Hardware Handling, Documentation        |
+| Srushti Upase  | Electronics    |  GitHub    | Hardware Handling, Documentation        |
 | Yash Singh     | Raspberry Pi Setup / Libraries  | Testing            | Software Setup           |
 | Omkar Hivrale  | GitHub Management               | Progress Tracking  | Version Control, Project Monitoring     |
 
