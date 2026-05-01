@@ -57,7 +57,7 @@ By the final review, this README should clearly show:
 
 ## 1.1 Studio / Group Name
 
-`Project^2`
+`Zenith`
 
 ## 1.2 Team Members
 
@@ -65,7 +65,7 @@ By the final review, this README should clearly show:
 |----------------|--------------------------------|--------------------|-----------------------------------------|
 | Aryan Pandey   | Electronics / Coding       | Team Lead          | Leadership, System Integration          |
 | Srushti Upase  | Electronics    | Coding / GitHub    | Hardware Handling, Documentation        |
-| Yash Singh     | Raspberry Pi Setup / Libraries  | Testing            | Software Setup,           |
+| Yash Singh     | Raspberry Pi Setup / Libraries  | Testing            | Software Setup           |
 | Omkar Hivrale  | GitHub Management               | Progress Tracking  | Version Control, Project Monitoring     |
 
 ## 1.3 Project Title
