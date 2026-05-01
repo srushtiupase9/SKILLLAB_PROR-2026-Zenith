@@ -61,12 +61,12 @@ By the final review, this README should clearly show:
 
 ## 1.2 Team Members
 
-| Name                  | Primary Role                    | Secondary Role   | Strengths Brought to the Project |
-| --------------        | ------------------------------- | --------------   | -------------------------------- |
-| `Aryan Pandey` | `[Electronics / Coding / App ]` | `Documentation`  | `Documentation, Gift of Gab `|
-| `Srushti Upase`       | `[Electronics / Fabrication]`   | `[Coding]`       | `Material Handling, Hardware`    |
-   `Yash Singh`
-  `Omkar Hivrale`
+| Name           | Primary Role                    | Secondary Role     | Strengths Brought to the Project        |
+|----------------|--------------------------------|--------------------|-----------------------------------------|
+| Aryan Pandey   | Electronics / Coding       | Team Lead          | Leadership, System Integration          |
+| Srushti Upase  | Electronics    | Coding / GitHub    | Hardware Handling, Documentation        |
+| Yash Singh     | Raspberry Pi Setup / Libraries  | Testing            | Software Setup,           |
+| Omkar Hivrale  | GitHub Management               | Progress Tracking  | Version Control, Project Monitoring     |
 
 ## 1.3 Project Title
 
