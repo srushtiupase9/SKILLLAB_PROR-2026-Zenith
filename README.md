@@ -441,15 +441,14 @@ Decisions were made collectively through discussion among all team members to en
 In case of delays, responsibilities were adjusted and team members supported each other to complete pending work on time. Documentation was maintained continuously on GitHub, ensuring that all changes and progress were properly recorded.
 
 ## 10.2 Task Breakdown
-| Task ID | Task                          | Owner           | Estimated Hours | Deadline  | Dependency                | Status |
-|---------|-------------------------------|------------------|-----------------|-----------|---------------------------|--------|
-| T1      | Finalize project concept      | All              | 1               | 2nd May   | None                      | Done   |
-| T2      | Sensor connections setup      | Aryan            | 2               | 2nd May   | After concept finalization| Done   |
-| T3      | Python code implementation    | Aryan, Srushti   | 4               | 2nd May   | After connections setup   | Done   |
-| T4      | Library installation setup    | Yash             | 2               | 2nd May   | Before running code       | Done   |
-| T5      | Testing and debugging         | Aryan,Srushti              | 3               | 2nd May   | After code implementation | Done   |
-| T6      | GitHub updates & documentation| Srushti, Omkar   | 3               | 2nd May   | Ongoing                   | Ongoing   |
-
+| Task ID | Task                          | Owner            | Estimated Hours | Deadline | Dependency | Status   |
+|---------|-------------------------------|------------------|-----------------|----------|------------|----------|
+| T1      | Finalize project concept      | All              | 1               | 2nd May  | None       | Done     |
+| T2      | Sensor connections setup      | Aryan            | 2               | 2nd May  | T1         | Done     |
+| T3      | Python code implementation    | Aryan, Srushti   | 4               | 2nd May  | T2         | Done     |
+| T4      | Library installation setup    | Yash             | 2               | 2nd May  | T2         | Done     |
+| T5      | Testing and debugging         | Aryan, Srushti   | 3               | 2nd May  | T3, T4     | Done     |
+| T6      | GitHub updates & documentation | Srushti, Omkar  | 3               | 2nd May  | T1–T5      | Ongoing  |
 
 ## 10.3 Responsibility Split
 
